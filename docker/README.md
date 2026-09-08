@@ -27,12 +27,13 @@ Un **conteneur** est un environnement isolé qui exécute une application en s'a
 - *Exemples d'isolation forte requise* : Active Directory, DHCP/DNS primaire, base de données réglementée, firewall.
 - *Exemples d'isolation logique suffisante* : wiki interne, monitoring, environnements de test, outils de dev.
 
-**Question à se poser pour trancher :** si ce service tombe ou est compromis, quel est le rayon de dégât acceptable ? Impact large ou obligation réglementaire → VM. Impact isolé et tolérable → conteneur.
+**Question à se poser pour trancher :** si ce service tombe ou est compromis, quel est le rayon de dégât acceptable ? 
+- Impact large ou obligation réglementaire → VM. 
+- Impact isolé et tolérable → conteneur.
 
 ### Images, containers, registry, engine
 
 - **Image** : modèle statique, contient tout pour créer un conteneur (code, dépendances, config).
-- **Container** : instance en cours d'exécution d'une image. Plusieurs conteneurs peuvent naître de la même image.
 - **Registry** : stocke et distribue les images (ex. Docker Hub).
 - **Docker Engine** : le service qui crée, exécute et gère les conteneurs à partir des images.
 

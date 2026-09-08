@@ -29,9 +29,10 @@ Dépôt référencé depuis [kodekloud-labs](https://github.com/SybillLabs/kodek
 |---|---|
 | **[Docker for Absolute Beginners](/docker/README.md)** | ✅ Terminé |
 | **[Kubernetes for Absolute Beginners](/kubernetes/README.md)** | 🔄 En cours |
-| **[AWS Basics](/aws-basics/README.md)** | ⏳ Prévu |
+| **[AWS Basics](/aws-basics/README.md)** | 🔄 En cours |
 | **[AI-Powered DevOps](/ai-powered-devops/README.md)** | ⏳ Prévu |
 | **[MCP for Beginners](/mcp-for-beginners/README.md)** | ⏳ Prévu |
+| **[Linux for Absolute Beginners](/linux/README.md)** | 🔄 En cours |
 
 ## `> ./structure.sh`
 
