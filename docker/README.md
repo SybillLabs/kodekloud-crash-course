@@ -3,31 +3,43 @@
 </h1>
 
 ## `> overview.sh`
-- **C'est quoi un conteneur?**  
-    Un conteneur est un environnement isolé qui exécute une application en s'appuyant sur le noyau du système d’exploitation de l'hôte. Cette approche le rend beaucoup plus léger et rapide qu’une machine virtuelle, qui elle embarque son propre système d’exploitation complet.
-- **Est-ce que je peux faire tourner un CT Windows sous un hôte Linux ?**  
-    Non. Un conteneur doit utiliser le même type de système d'exploitation que son hôte : un conteneur Linux ne peut pas fonctionner sur un hôte Windows, et inversement.
-- **Que sont les `images` et les `registries` ?**  
-    Une `image` est un ensemble de fichiers contenant tout ce qu'il faut pour exécuter une application dans un conteneur : code, dépendances, bibliothèques, configuration.  
-    Une `registry` est un service qui stocke et distribue ces images. On peut y récupérer des images publiques (comme sur Docker Hub) ou y publier ses propres images.
-- **Quel différence entre `images`et `containers` ?**  
-    Une `image` est un modèle statique, un fichier qui contient tout ce qu’il faut pour créer un conteneur.  
-    Un `container` est une instance en cours d'exécution d’une image. On peut créer plusieurs conteneurs à partir de la même image.
-- **C'est quoi le rôle moteur Docker ?**  
-    `Docker Engine` est le service qui permet de créer, exécuter et gérer les conteneurs à partir des images.
-- **Comment fonctionne le réseau dans Docker ?**  
-    Par défaut, Docker crée un réseau interne permettant aux conteneurs de communiquer entre eux ou avec l'extérieur selon la configuration choisie.
-- **Pourquoi mes données disparaissent quand je supprime un conteneur ?**  
-    Les données d'un conteneur ne sont pas persistantes par défaut; pour conserver les fichiers, on utilise des volumes.
-- **Quels sont les avantages d’un container par rapport à une VM ?**  
-    - Démarrage très rapide
-    - Consommation de ressources réduite
-    - Isolation des processus, du réseau et du système de fichiers
-    - Portabilité élevée (fonctionne sur tout hôte compatible)
-- **Quels sont les inconvénients d’un container par rapport à une VM ?**
-    - Sécurité plus limitée (partage du noyau de l’hôte)
-    - Pas de support multi‑OS (un conteneur doit correspondre au type d’OS de l’hôte)
-    - Écosystème moins mature que celui de la virtualisation classique
+
+### Qu'est-ce que Docker et pourquoi l'utiliser ?
+
+Docker permet de faire tourner plusieurs services isolés sur une seule machine, sans les faire cohabiter en vrac sur le même OS.
+
+Un **conteneur** est un environnement isolé qui exécute une application en s'appuyant sur le noyau de l'hôte. Contrairement à une VM qui embarque son propre OS complet, le conteneur partage le noyau de la machine hôte : plus léger, démarrage quasi instantané, mais isolation plus faible qu'une VM (si le noyau hôte plante, tous les conteneurs tombent avec).
+
+> ⚠️ Un conteneur doit être du même type d'OS que son hôte. Pas de conteneur Windows sur un hôte Linux, et inversement.
+
+**Pourquoi Docker et pas juste installer les services directement sur l'hôte ?**
+- Chaque service garde ses propres dépendances (versions, libs) sans conflit avec les autres.
+- Reproductibilité : l'environnement est versionné (`Dockerfile`), redéployable à l'identique sur une autre machine.
+- Portabilité : ça tourne pareil en dev, en test, en prod.
+
+### VM vs Conteneur : que choisir ?
+
+| Besoin | Solution |
+|---|---|
+| Isolation forte (kernel séparé, panne d'un service ne doit rien impacter d'autre) | VM ou machine dédiée |
+| Isolation logique suffisante (services de criticité comparable, juste éviter les conflits de dépendances) | Une machine + Docker, un conteneur par service |
+
+- *Exemples d'isolation forte requise* : Active Directory, DHCP/DNS primaire, base de données réglementée, firewall.
+- *Exemples d'isolation logique suffisante* : wiki interne, monitoring, environnements de test, outils de dev.
+
+**Question à se poser pour trancher :** si ce service tombe ou est compromis, quel est le rayon de dégât acceptable ? Impact large ou obligation réglementaire → VM. Impact isolé et tolérable → conteneur.
+
+### Images, containers, registry, engine
+
+- **Image** : modèle statique, contient tout pour créer un conteneur (code, dépendances, config).
+- **Container** : instance en cours d'exécution d'une image. Plusieurs conteneurs peuvent naître de la même image.
+- **Registry** : stocke et distribue les images (ex. Docker Hub).
+- **Docker Engine** : le service qui crée, exécute et gère les conteneurs à partir des images.
+
+### Réseau et persistance
+
+- Par défaut, Docker crée un réseau interne pour la communication entre conteneurs et vers l'extérieur.
+- Les données d'un conteneur ne sont **pas persistantes** par défaut : à la suppression du conteneur, tout disparaît. Pour conserver des fichiers, on utilise des **volumes**.
 
 ## `> labs.sh`
 
