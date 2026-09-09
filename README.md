@@ -32,7 +32,6 @@ Dépôt référencé depuis [kodekloud-labs](https://github.com/SybillLabs/kodek
 | **[AWS Basics](/aws-basics/README.md)** | 🔄 En cours |
 | **[AI-Powered DevOps](/ai-powered-devops/README.md)** | ⏳ Prévu |
 | **[MCP for Beginners](/mcp-for-beginners/README.md)** | ⏳ Prévu |
-| **[Linux for Absolute Beginners](/linux/README.md)** | 🔄 En cours |
 
 ## `> ./structure.sh`
 
