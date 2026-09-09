@@ -80,7 +80,7 @@ spec:                 # Configuration réelle de l'objet
 
 ## `> labs.sh`
 
-Voici les différentes commandes Docker que j'ai apprises dans ce cours, avec un petit exemple pour chacune d'entre elles :
+Voici les différentes commandes Kubernetes que j'ai apprises dans ce cours, avec un petit exemple pour chacune d'entre elles :
 ```bash
 kubectl get nodes                       # Affiche la liste des nodes du cluster
 kubectl cluster-info                    # Affiche les informations sur le cluster
