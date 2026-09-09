@@ -44,6 +44,7 @@ Un **conteneur** est un environnement isolé qui exécute une application en s'a
 
 ## `> labs.sh`
 
+Voici les différentes commandes Docker que j'ai apprises dans ce cours, avec un petit exemple pour chacune d'entre elles :
 ```bash
 # Lab -- docker run
 docker --help                           # Afficher l'aide de Docker et la liste des sous-commandes disponibles

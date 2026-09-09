@@ -28,7 +28,7 @@ Dépôt référencé depuis [kodekloud-labs](https://github.com/SybillLabs/kodek
 | Crash Course | Statut |
 |---|---|
 | **[Docker for Absolute Beginners](/docker/README.md)** | ✅ Terminé |
-| **[Kubernetes for Absolute Beginners](/kubernetes/README.md)** | 🔄 En cours |
+| **[Kubernetes for Absolute Beginners](/kubernetes/README.md)** | ✅ Terminé |
 | **[AWS Basics](/aws-basics/README.md)** | 🔄 En cours |
 | **[AI-Powered DevOps](/ai-powered-devops/README.md)** | ⏳ Prévu |
 | **[MCP for Beginners](/mcp-for-beginners/README.md)** | ⏳ Prévu |
