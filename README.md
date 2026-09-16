@@ -1,14 +1,8 @@
-<p align="center">
-    <img src="https://capsule-render.vercel.app/api?type=blur&height=300&color=&color=FF003C&text=KodeKloud%20-%20Crash%20Course&fontSize=50&fontColor=FF003C&stroke=121212&strokeWidth=5" alt="HEADER" />
-</p>
+<h1 align="center">
+    💻⚡ KodeKloud Crash Courses
+</h1>
 
 ## `> ./tech_stack.sh`
-<p align="left">
-    <img src="https://img.shields.io/badge/KODEKLOUD-white?style=for-the-badge&color=%232496ED"/>
-    <img src="https://img.shields.io/badge/BEGINNER-white?style=for-the-badge&color=green"/>
-    <img src="https://img.shields.io/badge/CRASH%20COURSE-white?style=for-the-badge&color=purple"/>
-
-</p>
 <p align="left">
     <img src="https://img.shields.io/badge/DOCKER-white?style=for-the-badge&logo=docker&logoColor=white&color=%232496ED"/>
     <img src="https://img.shields.io/badge/KUBERNETES-white?style=for-the-badge&logo=kubernetes&logoColor=white&color=%23326CE5"/>

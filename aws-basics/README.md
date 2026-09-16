@@ -1,5 +1,5 @@
 <h1 align="center">
-    🐋 AWS Basics for beginners
+    ☁️ AWS Basics for beginners
 </h1>
 
 ## `> overview.sh`
