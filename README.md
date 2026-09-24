@@ -1,23 +1,25 @@
-<h1 align="center">
-    💻⚡ KodeKloud Crash Courses
-</h1>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,100:1a1a2e&fontColor=FF003C&fontSize=48&height=160&width=900&text=KodeKloud%20Crash%20Courses&section=header&animation=fadeIn" alt="Header"/>
+</p>
 
-## `> ./tech_stack.sh`
+## `> tech_stack`
 <p align="left">
     <img src="https://img.shields.io/badge/DOCKER-white?style=for-the-badge&logo=docker&logoColor=white&color=%232496ED"/>
     <img src="https://img.shields.io/badge/KUBERNETES-white?style=for-the-badge&logo=kubernetes&logoColor=white&color=%23326CE5"/>
-    <img src="https://img.shields.io/badge/AWS-white?style=for-the-badge&color=%23FF9900"/>
+    <img src="https://img.shields.io/badge/AWS-green?style=for-the-badge&logo=icloud&logoColor=white&color=FF9900"/>
     <img src="https://img.shields.io/badge/AI%20POWERED%20DEVOPS-white?style=for-the-badge&color=%239D00FF"/>
     <img src="https://img.shields.io/badge/MCP-white?style=for-the-badge&color=%23191919"/>
 </p>
 
-## `> ./overview.sh`
+## `> overview`
+Ce dépôt regroupe mes comptes-rendus des **Crash Courses KodeKloud** listés dans `> progress`. Chacun contient :
+- **Commandes exécutées** durant les sessions,
+- **Manipulations** des outils utilisés,
+- **Résolution de problèmes** (troubleshooting) rencontrés dans les labs.
 
-Ce dépôt regroupe l'ensemble des **Crash Courses KodeKloud** que je réalise : introductions rapides et pratiques sur des sujets DevOps/Cloud/IA, chacun avec son propre README et ses preuves d'exécution (captures, notes de labs).
+Ce dépôt est référencé depuis [kodekloud-labs](https://github.com/SybillLabs/kodekloud-labs), le hub central de mes labs KodeKloud.
 
-Dépôt référencé depuis [kodekloud-labs](https://github.com/SybillLabs/kodekloud-labs), le hub central de tous mes labs KodeKloud.
-
-## `> ./progress.sh`
+## `> progress`
 
 | Crash Course | Statut |
 |---|---|
@@ -27,9 +29,8 @@ Dépôt référencé depuis [kodekloud-labs](https://github.com/SybillLabs/kodek
 | **[AI-Powered DevOps](/ai-powered-devops/README.md)** | ⏳ Prévu |
 | **[MCP for Beginners](/mcp-for-beginners/README.md)** | ⏳ Prévu |
 
-## `> ./structure.sh`
-
-<pre>
+## `> structure`
+```
 kodekloud-crash-courses/
 ├── docker/
 │   └── README.md
@@ -45,16 +46,12 @@ kodekloud-crash-courses/
 └── mcp-for-beginners/
     ├── README.md
     └── assets/
-</pre>
-
----
-
-<p align="center">  
-    <i>↪️ Back to the hub :<a href="https://github.com/SybillLabs/kodekloud-labs.git"> kodekloud-labs</a></i> | <i>📍 From <a href="https://github.com/SybillLabs">SybillLabs</a></i>
-</p>
+```
 
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:0d0d0d&fontColor=FF003C&fontSize=50&height=100&width=900&text=%5BEOF%5D&section=footer"/>
+    <a href="https://github.com/SybillLabs">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:0d0d0d&fontColor=FF003C&fontSize=32&height=100&width=900&text=%5BEOF%20-%20From%20SybillLabs%5D&section=footer"/>
+    </a>
 </p>
