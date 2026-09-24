@@ -7,6 +7,8 @@
 - **Statut** : terminé le 07/09/2026
 - **Environnement** : lab KodeKloud en ligne via interface web
 
+![certificat](/kubernetes/assets/certificat.png)
+
 ## `> labs.sh`
 
 Voici les différentes commandes Kubernetes que j'ai apprises dans ce cours, avec un petit exemple pour chacune d'entre elles :
