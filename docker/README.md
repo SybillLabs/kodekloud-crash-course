@@ -11,7 +11,7 @@
 
 ## `> labs`
 
-Voici les différentes commandes Docker que j'ai apprises dans ce cours, avec un petit exemple pour chacune d'entre elles :
+Voici les différentes commandes *Docker* que j'ai apprises dans ce cours, avec un petit exemple pour chacune d'entre elles :
 ```bash
 # Lab -- docker run
 # Afficher l'aide de Docker et la liste des sous-commandes disponibles

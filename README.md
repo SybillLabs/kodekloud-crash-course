@@ -13,9 +13,9 @@
 
 ## `> overview`
 Ce dépôt regroupe mes comptes-rendus des **Crash Courses KodeKloud** listés dans `> progress`. Chacun contient :
-- **Commandes exécutées** durant les sessions,
-- **Manipulations** des outils utilisés,
-- **Résolution de problèmes** (troubleshooting) rencontrés dans les labs.
+- **Commandes exécutées** durant les sessions
+- **Manipulations** des outils utilisés
+- **Résolution de problèmes** (troubleshooting) rencontrés dans les labs
 
 Ce dépôt est référencé depuis [kodekloud-labs](https://github.com/SybillLabs/kodekloud-labs), le hub central de mes labs KodeKloud.
 

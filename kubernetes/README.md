@@ -11,7 +11,7 @@
 
 ## `> labs.sh`
 
-Voici les différentes commandes Kubernetes que j'ai apprises dans ce cours, avec un petit exemple pour chacune d'entre elles :
+Voici les différentes commandes *Kubernetes* que j'ai apprises dans ce cours, avec un petit exemple pour chacune d'entre elles :
 ```bash
 # Affiche la liste des nodes du cluster
 kubectl get nodes 
